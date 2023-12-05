@@ -1,0 +1,104 @@
+body {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85);
+}
+.weather-info {
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout */
+    align-items: center;
+    text-align: center; /* Center text within the container */
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading p {
+    margin-top: 10px;
+    letter-spacing: 0.5rem;
+}
+
+#updateButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#updateButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.p2 {
+    margin-top: 10px;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+
+.p3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+sup {
+    font-size: 0.2em;
+}
+
+.location {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.location header {
+    display: flex;
+    flex-direction: column;
+}
+
+.location span {
+    font-size: 1.7em;
+}
+
+.location sup {
+    height: 2.4em;
+    padding: 0.2rem 0.6rem;
+    margin-left: 0.2rem;
+    border-radius: 10px;
+    color: #fff;
+    background: #4CAF50;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    color: #45a049;
+    text-align: center;
+}
+
+.temp_feel_like {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #004cff;
+    text-align: center;
+}

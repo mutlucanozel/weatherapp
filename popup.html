@@ -1,0 +1,44 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app" id="weatherApp">
+        <div class="loading" id="loadingScreen">
+            <p>Loading...</p>
+        </div>
+        
+        <div class="weather-info" id="weatherInfo" style="display:none;">
+            <div class="location" id="locationScreen">
+                <h1 id="text_location"></h1>
+                <sup id="text_location_country"></sup>
+            </div>
+
+            <div class="p2" id="temperatureScreen">
+                <span>Temperature:</span>
+                <span id="text_temp"></span>
+                <sup>°C</sup>
+            </div>
+
+            <div class="p2" id="feelsLikeScreen">
+                <span>Feels like:</span>
+                <span id="text_feelslike"></span>
+                <sup>°C</sup>
+            </div>
+
+            <img id="icon" alt="Weather Icon">
+
+            <div class="p3" id="text_desc"></div>
+
+            <button id="updateButton">Update Weather</button>
+        </div>
+    </div>
+
+    <script src="fetchData.js"></script>
+</body>
+</html>
